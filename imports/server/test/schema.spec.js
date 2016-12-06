@@ -1,4 +1,4 @@
-import { chai } from 'meteor/practicalmeteor:chai';
+import chai from 'chai';
 import gql from 'graphql-tag';
 import execute from '/imports/server/executeGraphQL';
 

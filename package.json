@@ -16,7 +16,6 @@
     "meteor-node-stubs": "~0.2.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "spacejam": "^1.6.1"
+    "chai": "^3.5.0"
   }
 }
