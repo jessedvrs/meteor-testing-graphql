@@ -23,7 +23,7 @@ export default new GraphQLSchema({
             },
 
             /**
-             * Query: foo
+             * Query: todos
              */
             todos: {
                 type: new GraphQLList(todoType),
@@ -31,10 +31,16 @@ export default new GraphQLSchema({
                     limit: {type: GraphQLInt}
                 },
                 resolve: (_, args, context) => {
-                    return [
-                        {label: 'foo'},
-                        {label: 'foofoo'}
-                    ].slice(0, args.limit);
+                    const todos = [
+                        {
+                            label: 'Prepare a talk for the Meteor meetup.'
+                        },
+                        {
+                            label: 'Run a few miles.'
+                        }
+                    ];
+
+                    return todos.slice(0, args.limit);
                 }
             }
         }
