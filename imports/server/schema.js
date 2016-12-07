@@ -9,7 +9,7 @@ import todoType from './types/todoType';
 
 export default new GraphQLSchema({
     query: new GraphQLObjectType({
-        name: 'Queries',
+        name: 'RootQueryType',
         fields: {
 
             /**
